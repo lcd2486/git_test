@@ -1,0 +1,13 @@
+
+
+#include<linux/init.h>
+#include<linux/moudle.h>
+
+
+struct lock_dev{
+	atomic_t cnt;
+	spinlock_t slock;
+	struct mutex mlock;
+	
+
+}
